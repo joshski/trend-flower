@@ -34,6 +34,7 @@ exports.fetch (callback) =
   url = "http://www.google.co.uk/trends/hottrends#pn=p9"
 
   getTrends() =
-      browser.visit(url, extractTrends).fail (getTrends)
+      browser.visit(url, extractTrends).fail
+        setTimeout(getTrends, 100)
 
   getTrends()
