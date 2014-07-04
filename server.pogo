@@ -18,7 +18,7 @@ server = http.create server @(req, res)
       render trends (cachedTrends, res)
     else
       trends.fetch @(trends)
-        cache.put('trends', trends, 60000)
+        cache.put('trends', trends, 120000)
         render trends (trends, res)
   else
     res.end(html)
