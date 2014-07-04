@@ -11,6 +11,7 @@
   "dependencies": {
     "cheerio": "^0.17.0",
     "httpism": "^0.1.2",
+    "memory-cache": "0.0.5",
     "pogo": "^0.8.2",
     "zombie": "^2.0.0-alpha31"
   }

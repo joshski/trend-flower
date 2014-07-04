@@ -1,10 +1,9 @@
 http = require 'http'
 fs = require 'fs'
 trends = require './trends'
+cache = require('memory-cache')
 
 html = fs.readFileSync('./flower.html', 'utf-8')
-
-cache = []
 
 render trends (trends, res) =
   console.log ("RENDERING TRENDS", trends)
@@ -13,14 +12,13 @@ render trends (trends, res) =
 
 server = http.create server @(req, res)
   if (req.url == '/trends')
-    if (cache.length == 0)
-      trends.fetch @(trends)
-        cache := trends
-        render trends (cache, res)
+    cachedTrends = cache.get('trends')
+    if (cachedTrends)
+      render trends (cachedTrends, res)
     else
-      render trends (cache, res)
       trends.fetch @(trends)
-        cache := trends
+        cache.put('trends', trends, 60000)
+        render trends (trends, res)
   else
     res.end(html)
 
