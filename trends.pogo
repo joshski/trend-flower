@@ -26,7 +26,7 @@ exports.fetch (callback) =
       getTrends()
     else
       trends = trendElements.map(extractTrend)
-      if (trends.length > 0)
+      if (trendElements.length > 10)
         browser.close()
         console.log("GOT TRENDS!")
         callback(trends)
