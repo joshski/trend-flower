@@ -1,4 +1,4 @@
-flower:
-	./node_modules/.bin/pogo flower.pogo
+trends:
+	./node_modules/.bin/pogo trends.pogo
 
 .PHONY :flower
