@@ -675,47 +675,11 @@
         <div id="center"></div>
     </div>
 
-    <script src="trends"></script>
+    <!-- <script src="trends"></script> -->
 
     <script>
-    // var trends = window.trends || [ { title: 'Wireless Festival',
-    //     image: 'http://t1.gstatic.com/images?q=tbn:ANd9GcTe77Jl2j9iOzYEExdr_oHafubLkLJCkYAST1MUcYs97KvJnVjIr9O0f-_sRPv62CU3qFZzTmc' },
-    //   { title: 'Jacqueline Jossa',
-    //     image: 'http://t0.gstatic.com/images?q=tbn:ANd9GcRTJ-PswzWla43gY8srpyOWNAD44OuokIZS1VbiyFU624un7WV344vTsgxsGZGZsHtOBAoKkNE' },
-    //   { title: 'Magaluf Girl',
-    //     image: 'http://t0.gstatic.com/images?q=tbn:ANd9GcQI9tHHH60fSRLHpZUyPBDK0YtQ_c4d0YOJUwoQxYaEKe3qUPMYxV9VqIgfhi_qLjfHr7ZVLEeT' },
-    //   { title: 'FGM',
-    //     image: 'http://t1.gstatic.com/images?q=tbn:ANd9GcTNq5VK4qgT446VTL-xrnUJf3yx8dQ3u-DhvP1O-5mjps-8C1sGTzKzBN7hg49JEecyMP-i1XY' },
-    //   { title: 'Maggie Gyllenhaal',
-    //     image: 'http://t3.gstatic.com/images?q=tbn:ANd9GcS65qImDGeP-_hYaXIb2wN0tQC4p1DnjhC7Axlc28p21v4E41Fe04Y_6p7OrBxAdMD4qoqfjs21' },
-    //   { title: 'Emre Can',
-    //     image: 'http://t0.gstatic.com/images?q=tbn:ANd9GcQOkYybsv_muE8iWzAkRMLxkZE5xICPqA1GCxLDtaPaDhJS1QzNz3-XwsA6gDGVPVeGXd7TY1I' },
-    //   { title: 'Asprey',
-    //     image: 'http://t0.gstatic.com/images?q=tbn:ANd9GcRawEpZzVjrRWZ37AmoOHH9Vbbr39trUMhBH1BzyWByiLnlDE3ucA_IyS07WxvKaGngDEsmdCY' },
-    //   { title: 'Naomi Broady',
-    //     image: 'http://t2.gstatic.com/images?q=tbn:ANd9GcQQ2MqleCSWe9qdO-bRVezNSMF7dhwtkOMLKo9U5OJlOyJACd8Fb9rPFj8XndFR5TPLMXeBEJJd' },
-    //   { title: 'Wimbledon',
-    //     image: 'http://t1.gstatic.com/images?q=tbn:ANd9GcTp8Pp4kiOGGKOENvIt_s4TwAnYZ5yNBAfmz_7d4jG5Gx2_XlIMUuL9rV7B0Qw2oALJUnIUaE-H' },
-    //   { title: 'Roger Federer',
-    //     image: 'http://t3.gstatic.com/images?q=tbn:ANd9GcS0BaMlLhIOLYemwW-0o9eystCuw4HkjwnHlf4FvjRSughKAEJeRuiSp-l-6p2M2jZKWexUvjw' },
-    //   { title: 'ebola',
-    //     image: 'http://t1.gstatic.com/images?q=tbn:ANd9GcSJ3tziIvxq2p2AdYBazE5y4c1jbWvutEWS9O49IPHYBppdJSe8Q8sXi-eJNsLvOeA3QRKSmaoT' },
-    //   { title: 'Raonic',
-    //     image: 'http://t1.gstatic.com/images?q=tbn:ANd9GcS7zROfFfCDRrETC1UtVPoNawcaLuYbqnvc7nMwX8FYNnlDUBtnuAWhPE0bCWaS4EQ5tktQZKl2' },
-    //   { title: 'Revenge porn',
-    //     image: 'http://t1.gstatic.com/images?q=tbn:ANd9GcSFhWf8Q7-sES7jxHstidv6NeUxbJtKxaIgQHrE85vFIQlRdEJ53dr4NioQAMloHelOlRiVRrM' },
-    //   { title: 'Monty Python',
-    //     image: 'http://t3.gstatic.com/images?q=tbn:ANd9GcRvqZMuIx8yUDkZKDiHorf7H1xbGsCnpv23IoQ7vdocOpHvKGfkcL5bqqnyLJPGNZf5jQpWnM0' },
-    //   { title: 'Andres Escobar',
-    //     image: 'http://t0.gstatic.com/images?q=tbn:ANd9GcSkgKkzU2vFbHNTZg-B9sy7gc51prIxIctkkBDu5_ZnENTK5vjHucsm24cIvfp-G03brJgBhvI' },
-    //   { title: 'Crohn\'s Disease',
-    //     image: 'http://t0.gstatic.com/images?q=tbn:ANd9GcTAlA85SI2nxNl9Erys90KYe8C3KYdomgT86wbcO_hn6dyb816Wpe0Y-Vwr6jF_uNdg78C2jOCG' },
-    //   { title: 'Wawrinka',
-    //     image: 'http://t2.gstatic.com/images?q=tbn:ANd9GcTUg2IYBHOWCLrC9Le0BieSLvwk97vLVQUKo4pfW5CoZfFT78WG-o5gr7t-vIDArql6z7ZdwstF' },
-    //   { title: 'Yedlin',
-    //     image: 'http://t2.gstatic.com/images?q=tbn:ANd9GcQp3XBx6h1l0ivbmxIUDWJM1IEflzxQcNqYQ4MLuUewNrg54I0f-27EtYmAxh1bsM0hqvK44yss' },
-    //   { title: 'Michael Bradley',
-    //     image: 'http://t2.gstatic.com/images?q=tbn:ANd9GcTExURRZ2xsWdx2tzFmqL-mzbKFB-WrJwu-FE6btGIUUS5IAPljrL-Ss_cjcegir9pTgkgxhkQ' } ]
+    window.trends = [{"title":"Michael Bradley",
+      "image":"http://t2.gstatic.com/images?q=tbn:ANd9GcTExURRZ2xsWdx2tzFmqL-mzbKFB-WrJwu-FE6btGIUUS5IAPljrL-Ss_cjcegir9pTgkgxhkQ"},{"title":"Yedlin","image":"http://t2.gstatic.com/images?q=tbn:ANd9GcQp3XBx6h1l0ivbmxIUDWJM1IEflzxQcNqYQ4MLuUewNrg54I0f-27EtYmAxh1bsM0hqvK44yss"},{"title":"Andres Escobar","image":"http://t3.gstatic.com/images?q=tbn:ANd9GcQ65Fc5ogZL-U3HkwePnpje1avAni-Sp1DiaY0pOt2SacWUKq3pjbC1Kb8hO8UGmoIZhTFJhA"},{"title":"Bbc Sport Tennis","image":"http://t3.gstatic.com/images?q=tbn:ANd9GcRbL6_JjyRDMR6OH--mcV137R8eJiPO9SewTPE_8cqycMaYML03lXKrxIueOp0oy1U_U1aM_Oc"},{"title":"Monty Python","image":"http://t3.gstatic.com/images?q=tbn:ANd9GcRvqZMuIx8yUDkZKDiHorf7H1xbGsCnpv23IoQ7vdocOpHvKGfkcL5bqqnyLJPGNZf5jQpWnM0"},{"title":"Revenge porn","image":"http://t1.gstatic.com/images?q=tbn:ANd9GcSFhWf8Q7-sES7jxHstidv6NeUxbJtKxaIgQHrE85vFIQlRdEJ53dr4NioQAMloHelOlRiVRrM"},{"title":"ebola","image":"http://t1.gstatic.com/images?q=tbn:ANd9GcSJ3tziIvxq2p2AdYBazE5y4c1jbWvutEWS9O49IPHYBppdJSe8Q8sXi-eJNsLvOeA3QRKSmaoT"},{"title":"Roger Federer","image":"http://t1.gstatic.com/images?q=tbn:ANd9GcQ5KNZwapu4VUktyDEbRjDRlQySPZL7hYj3Na2y0HePlGdAxKQL0Fxouhhs-FDVSQOuY8IvqkI"},{"title":"Wimbledon 2014","image":"http://t1.gstatic.com/images?q=tbn:ANd9GcTp8Pp4kiOGGKOENvIt_s4TwAnYZ5yNBAfmz_7d4jG5Gx2_XlIMUuL9rV7B0Qw2oALJUnIUaE-H"},{"title":"Tour De France Yorkshire Route","image":"http://t3.gstatic.com/images?q=tbn:ANd9GcQgyDCX0fMtkNiDaZAT647One5lOGNABAG-ibaa26BdVIgBoeOW8Tfyn7DNAhJDm3IsVb_sOdA"},{"title":"The Honourable Woman","image":"http://t3.gstatic.com/images?q=tbn:ANd9GcSch7pJNBPjsZP_HBH-v_Hus1xfike7SpKM5qf5rKPvjER5jtC6c_0znBZ2oYLVzpih9sNUZWJ3"},{"title":"Maggie Gyllenhaal","image":"http://t3.gstatic.com/images?q=tbn:ANd9GcS65qImDGeP-_hYaXIb2wN0tQC4p1DnjhC7Axlc28p21v4E41Fe04Y_6p7OrBxAdMD4qoqfjs21"},{"title":"Asprey","image":"http://t3.gstatic.com/images?q=tbn:ANd9GcSKHJvOyqHzm_Vw69s-sH9J78t-hLMMN6LcZrEXRVrWnff9kbJIZ6ij5cMpbpDImel6ZZbkIVMD"},{"title":"Crohn's Disease","image":"http://t0.gstatic.com/images?q=tbn:ANd9GcQVHQLq1yE4OxDc4xkFnBzti8PLkZxu4sU8XHDcEE1P88TENnrLLH9Pi2jHPh_N1Vova4LFYsY"},{"title":"Emre Can","image":"http://t0.gstatic.com/images?q=tbn:ANd9GcSzIKKTyPQgoMqb77gEAOLA8EATrTw7hthAoshSFVHQKpF8oRgWZ0nVh2KPOqkTappJ7Q_6NzY"},{"title":"FGM","image":"http://t0.gstatic.com/images?q=tbn:ANd9GcRa2s56HaU873jadmy4pbnWqHYCaR3oJP5xR1Gx8jvaFEfYu4aX3WhVjx3aWxg961Z4hh9o3n93"},{"title":"Lipsy","image":"http://t2.gstatic.com/images?q=tbn:ANd9GcTvIuSV_9b6fKSqpDzoKx0_c9thskLEl6LXTheMPA6wa_2rqnbuaCM16TFhcp27LKsEup1Lg2g"},{"title":"Jacqueline Jossa","image":"http://t0.gstatic.com/images?q=tbn:ANd9GcRTJ-PswzWla43gY8srpyOWNAD44OuokIZS1VbiyFU624un7WV344vTsgxsGZGZsHtOBAoKkNE"},{"title":"Wireless Festival","image":"http://t1.gstatic.com/images?q=tbn:ANd9GcTe77Jl2j9iOzYEExdr_oHafubLkLJCkYAST1MUcYs97KvJnVjIr9O0f-_sRPv62CU3qFZzTmc"},{"title":"Magaluf Girl","image":"http://t0.gstatic.com/images?q=tbn:ANd9GcQI9tHHH60fSRLHpZUyPBDK0YtQ_c4d0YOJUwoQxYaEKe3qUPMYxV9VqIgfhi_qLjfHr7ZVLEeT"}];
 
       var trends = window.trends;
       var innerPetalsCount = Math.floor(trends.length * 0.4);
