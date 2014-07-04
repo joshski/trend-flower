@@ -6,7 +6,7 @@ cache = require('memory-cache')
 html = fs.readFileSync('./flower.html', 'utf-8')
 
 render trends (trends, res) =
-  console.log ("RENDERING TRENDS", trends)
+  // console.log ("RENDERING TRENDS", trends)
   res.setHeader('Content-Type', 'text/javascript')
   res.end("window.trends = " + JSON.stringify(trends))
 
@@ -14,6 +14,7 @@ server = http.create server @(req, res)
   if (req.url == '/trends')
     cachedTrends = cache.get('trends')
     if (cachedTrends)
+      console.log "RENDERING CACHED TRENDS"
       render trends (cachedTrends, res)
     else
       trends.fetch @(trends)

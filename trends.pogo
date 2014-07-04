@@ -8,10 +8,10 @@ exports.fetch (callback) =
     'Chrome/19.0.1036.7 Safari/535.20'
   ].join ' '
 
-  browser = @new Browser(userAgent: userAgent, debug: true, waitFor: 2500)
+  browser = @new Browser(userAgent: userAgent, debug: false, waitFor: 2500)
 
   extractTrend (trendElement) =
-    console.log(trendElement.innerHTML)
+    // console.log(trendElement.innerHTML)
     titleElement = trendElement.querySelector('.hottrends-single-trend-title')
     imgElement = trendElement.querySelector('img')
 
